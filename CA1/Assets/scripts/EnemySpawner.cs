@@ -24,11 +24,11 @@ public class EnemySpawner : MonoBehaviour
         chose = chose % 2;
         if (chose == 0)
         {
-            Instantiate(Enemy1Prefab);
+            Instantiate(Enemy1Prefab, transform.position, Quaternion.identity);
         }
         else
         {
-            Instantiate(Enemy2Prefab);
+            Instantiate(Enemy2Prefab, transform.position, Quaternion.identity);
         }
 
         
